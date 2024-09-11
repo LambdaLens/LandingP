@@ -16,7 +16,7 @@
 }
 
 .h2.features__text-gradient {
-  background: var(--gradient);
+  background: linear-gradient(135deg, #447A90, #80b4d4);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -42,7 +42,7 @@
 
 .feature {
   padding: 32px 32px 35px 32px;
-  border: 1px solid rgba(4, 140, 128, 0.5);
+  border: 1px solid #447A90;
   border-radius: 12px;
 }
 
@@ -53,21 +53,20 @@
 .feature.tr {
   grid-area: tr;
 }
-
 .feature.bl {
-  grid-area: bl;
+  grid-column: span 1; 
 }
 
 .feature.blm {
-  grid-area: blm;
+  grid-column: span 1; 
 }
 
 .feature.brm {
-  grid-area: brm;
+  grid-column: span 2; 
 }
 
 .feature.br {
-  grid-area: br;
+  grid-column: span 1; 
 }
 
 .feature__icon {
@@ -76,8 +75,8 @@
   margin-bottom: 24px;
   border-radius: 5px;
   box-sizing: border-box;
-  padding: 4px;
-  border: 1px solid var(--secondary-200);
+  padding: 1px;
+  border: 1px solid #447A90;
 }
 
 .text-large.feature__heading {

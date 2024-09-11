@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./Logos.css";
 import { logos } from "../../utils/constants";
 

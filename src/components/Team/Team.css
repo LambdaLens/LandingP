@@ -1,0 +1,22 @@
+.team {
+    padding: 96px 144px;
+  }
+  
+  .h3.team__heading {
+    color: var(--secondary-200);
+    margin-bottom: 17px;
+    text-align: center;
+  }
+  
+  .team__subheading {
+    color: var(--primary-100);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .team__members-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }

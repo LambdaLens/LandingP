@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./Features.css";
 import { features } from "../../utils/constants";
 
@@ -8,12 +8,10 @@ const Features = () => {
       <div className="features__heading-container">
         <h2 className="h2 features__heading">
           Discover the Power of{" "}
-          <span className="h2 features__text-gradient">SmartNotes</span>
+          <span className="h2 features__text-gradient">LamdaLens</span>
         </h2>
         <p className="text-reg features__subheading">
-          SmartNotes is packed with innovative features designed to
-          revolutionize the way you take notes, collaborate with others, and
-          stay organized.
+          See what we use for our Tech Stack
         </p>
       </div>
       <div className="features__feature-container">

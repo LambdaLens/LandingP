@@ -44,7 +44,7 @@
   justify-content: center;
   align-items: center;
   column-gap: 8px;
-  background: var(--gradient);
+  background: linear-gradient(135deg, #447A90, #80b4d4); 
   color: var(--primary-400);
   cursor: pointer;
   transition: all 0.1s;

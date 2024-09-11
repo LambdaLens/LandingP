@@ -1,0 +1,49 @@
+  .team {
+    padding: 0px;
+  }
+  
+  .team__tiles {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+  }
+  
+  .team-tile {
+    flex: 1 1 300px; 
+    max-width: 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .team-tile__picture {
+    width: 150px; /* Width of the circular profile picture */
+    height: 150px; /* Height of the circular profile picture */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the circle without distortion */
+    margin-bottom: 15px; /* Spacing below the picture */
+  }
+  
+  .team-tile__name {
+    color: #447A90; /* Name color */
+    margin-bottom: 10px; /* Spacing below the name */
+  }
+  
+  .team-tile__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    align-items: center; 
+  }
+  
+  .team-tile__social-link {
+    color: var(--accent); 
+    text-decoration: none; 
+    font-size: 14px; 
+  
+  .team-tile__social-link:hover {
+    text-decoration: underline; 
+  }

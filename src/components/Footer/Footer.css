@@ -88,7 +88,7 @@
 }
 
 .footer__banner {
-  background-color: var(--secondary-200);
+  background-color: #447A90;
   padding: 18px 160px 18px 144px;
   display: flex;
   justify-content: space-between;
@@ -118,7 +118,7 @@
   border-radius: 50%;
   padding: 0px;
   border: none;
-  background-color: var(--secondary-300);
+  background-color: #447A90;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }

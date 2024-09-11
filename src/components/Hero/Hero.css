@@ -14,7 +14,7 @@
 }
 
 .hero__heading-gradient {
-  background: var(--gradient);
+  background: linear-gradient(135deg, #447A90, #80b4d4); 
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -23,7 +23,7 @@
 }
 
 .text-reg.hero__subheading {
-  color: var(--primary-100);
+  color: #62ACCC;
   margin-bottom: 50px;
 }
 
@@ -62,7 +62,7 @@
   height: 56px;
   width: 135px;
   border-radius: 8px;
-  background: var(--gradient);
+  background: linear-gradient(135deg, #447A90, #80b4d4); 
   display: flex;
   justify-content: center;
   align-items: center;
