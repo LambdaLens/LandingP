@@ -6,7 +6,7 @@ import Tim from "../../assets/profilePictures/Tim.jpeg";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Dylan Zhang ",
+      name: "Dylan Kinsella ",
       picture: dylan,
       linkedin: "https://www.linkedin.com/in/dylankinsella/",
       github: "https://github.com/dkinsell",
@@ -24,7 +24,7 @@ const Team = () => {
         github: "https://github.com/elee14",
     },
     {
-        name: "Spencer Kinsella",
+        name: "Spencer Zhang",
         picture: spencerPic,
         linkedin: "https://www.linkedin.com/in/spencer",
         github: "https://github.com/spencersz",

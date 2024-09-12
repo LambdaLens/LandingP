@@ -2,6 +2,7 @@
 import "./Navigation.css";
 // import logo from "../../assets/logo.svg";
 import arrow from "../../assets/arrow.svg";
+import logo from "../../assets/LLcircle.png"
 
 const Navigation = () => {
   const handleGitHubClick = () => {
@@ -11,18 +12,15 @@ const Navigation = () => {
     <nav className="navigation">
       <div className="navigation__logo-section">
         {/* smartLOGO replace with lambdalens logo */}
-        {/* <img className="navigation__logo" src={logo} alt="logo" /> */}
-        <h3 className="navigation__name">LambdaLens</h3>
+        <img className="navigation__logo" src={logo} alt="logo" />
+        <h3 className="navigation__name">Lambda Lens</h3>
       </div>
       <ul className="navigation__link-section">
         <a href="https://medium.com/@erinlee12000/introducing-lambda-lens-a-better-way-to-observe-and-optimize-aws-lambda-performance-2fad2c2184a1" className="text-reg navigation__link">
-          Blog
+          Medium
         </a>
         <a href="https://github.com/oslabs-beta/Lambda-Lens" className="text-reg navigation__link">
           About Our Team
-        </a>
-        <a href="https://github.com/oslabs-beta/Lambda-Lens" className="text-reg navigation__link">
-          Support Us
         </a>
       </ul>
       <button onClick={handleGitHubClick}className="text-reg navigation__cta">

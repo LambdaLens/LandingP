@@ -142,3 +142,55 @@
 .youtube {
   background: center no-repeat url("../../assets/footer/youtube.svg");
 }
+
+.text-reg.footer__col-heading {
+  font-size: 16px;
+}
+
+.footer__link {
+  font-size: 14px; 
+}
+
+.footer__company {
+  font-size: 24px; 
+}
+
+.text-reg.footer__col-heading {
+  font-size: 16px; 
+}
+
+.footer__link {
+  font-size: 14px; 
+}
+
+.footer__company {
+  font-size: 24px; 
+}
+
+@media (max-width: 768px) {
+  .text-reg.footer__col-heading {
+    font-size: 14px;
+  }
+
+  .footer__link {
+    font-size: 12px;
+  }
+
+  .footer__company {
+    font-size: 20px;
+  }
+
+  .footer__container {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__link-col {
+    width: auto;
+  }
+
+  .footer__input-container {
+    width: 100%;
+  }
+}

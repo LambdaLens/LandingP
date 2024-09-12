@@ -2,40 +2,38 @@
 import "./Hero.css";
 import arrow from "../../assets/arrow.svg";
 import abstractShapes from "../../assets/abstract-shapes.png";
+import Spline from "@splinetool/react-spline";
 
 const Hero = () => {
   return (
     <section className="hero">
       <div className="hero__column">
         <h1 className="h1 hero__heading">
-          <span className="hero__heading-gradient">LamdaLens</span>
-          performance metric{" "}
-          <span className="hero__heading-gradient">AWS Lambda serverless</span>
-          and AI Integrated
+          <span className="hero__heading-gradient">Lambda Lens </span>
+          AWS Lambda Insights{" "}
+          <span className="hero__heading-gradient">Simplified Metrics for </span>
+          Cold Start Optimization
         </h1>
         <p className="text-reg hero__subheading">
-          Experience the only open source with all in one place to transform
-          your AWS serverless workflow
+        Reimagine your AWS Lambda experience with a unified view of all your Lambda metrics.
         </p>
-        <div className="hero__input-container">
-          <input
-            className="hero__input"
-            type="email"
-            placeholder="Enter your email"
-          />
-          <button className="text-reg hero__submit">
-            NewsLetter
-            <img className="hero__arrow" src={arrow} alt="arrow" />
-          </button>
-        </div>
+
       </div>
-      {/* <div className="hero__column">
-        <img
+      <div className="hero__column">
+        {/* <img
           className="hero__graphic"
           src={abstractShapes}
           alt="abstract shapes"
-        />
-      </div> */}
+        /> */}
+        <div className="spline-container">
+          
+          <Spline
+            // scene="https://prod.spline.design/Vy4HK1Imv245iDKK/scene.splinecode"
+            scene="https://prod.spline.design/Vy4HK1Imv245iDKK/scene.splinecode"
+            style={{ width: '100%', height: '100%' }}
+          />
+        </div>
+      </div>
     </section>
   );
 };

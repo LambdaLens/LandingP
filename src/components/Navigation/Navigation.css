@@ -8,8 +8,13 @@
 
 .navigation__logo-section {
   display: flex;
-  align-items: center;
-  column-gap: 8px;
+  align-items: center; 
+  gap: 10px; 
+}
+
+.navigation__logo {
+  height: 50px; 
+  width: auto;
 }
 
 .navigation__name {

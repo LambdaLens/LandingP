@@ -1,7 +1,7 @@
 // import React from "react";
 import "./Footer.css";
 import LLcircle from "../../assets/LLcircle.png";
-import arrow from "../../assets/colored-arrow.svg";
+// import arrow from "../../assets/colored-arrow.svg";
 
 const Footer = () => {
   return (
@@ -65,7 +65,7 @@ const Footer = () => {
       </div>
       <div className="footer__banner">
         <p className="text-small footer__copywright">
-          @2024 SmartNotes. All Rights Reserved.
+          @2024 Lambda Lens. All Rights Reserved.
           <a
             href=""
             className="underline"
