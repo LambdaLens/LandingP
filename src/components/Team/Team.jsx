@@ -2,6 +2,7 @@ import TeamTile from "../TeamTile/TeamTile"; // Adjust the path as needed
 import spencerPic from "../../assets/profilePictures/spencerPic.jpeg";
 import dylan from "../../assets/profilePictures/dylan.jpeg"; // Example additional imports
 import Tim from "../../assets/profilePictures/Tim.jpeg";
+import Erin from "../../assets/profilePictures/erin-profile-pic.jpeg";
 
 const Team = () => {
   const teamMembers = [
@@ -19,7 +20,7 @@ const Team = () => {
     },
     {
         name: "Erin Lee",
-        picture: spencerPic,
+        picture: Erin,
         linkedin: "https://www.linkedin.com/in/elee14/",
         github: "https://github.com/elee14",
     },

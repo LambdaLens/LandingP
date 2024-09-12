@@ -5,7 +5,7 @@ const logos = [
   new URL("../assets/features/Aws.svg", import.meta.url).href,
   new URL("../assets/features/Auth.svg", import.meta.url).href,
   new URL("../assets/features/JS.svg", import.meta.url).href,
-  new URL("../assets/features/Docker.svg", import.meta.url).href,
+  // new URL("../assets/features/Docker.svg", import.meta.url).href,
   new URL("../assets/features/GitHub.svg", import.meta.url).href,
   new URL("../assets/features/Mongo.svg", import.meta.url).href,
 ];
@@ -15,20 +15,20 @@ const features = [
   {
     gridArea: "tl",
     image: new URL("../assets/features/TS.svg", import.meta.url).href,
-    heading: "TypeScript",
-    description: `A powerful, statically-typed language designed to enhance application reliability and maintainability through type safety and advanced tooling.`,
+    heading: "Average Bill Duration",
+    description: `Measures the average time billed for each serverless function execution, including initialization and overhead.`,
   },
   {
     gridArea: "tr",
     image: new URL("../assets/features/Aws.svg", import.meta.url).href,
-    heading: "AWS Serverless Lambda",
-    description: `Deploy custom serverless functions to execute specific tasks efficiently and collect comprehensive metrics to monitor performance and usage.`,
+    heading: "Cold Start Performance Metrics",
+    description: `Tracks the time taken for functions to initialize when they have been idle or are invoked for the first time.`,
   },
   {
     gridArea: "bl",
     image: new URL("../assets/features/Auth.svg", import.meta.url).href,
-    heading: "Secure your application using IAM",
-    description: `Ensure your application’s safety with Identity and Access Management (IAM). Trust that your notes are securely stored in the cloud, protected by robust access controls.
+    heading: "Total Cold Starts",
+    description: `The total number of times a function was initialized from scratch, indicating how often it experiences cold starts.
             `,
   },
   {

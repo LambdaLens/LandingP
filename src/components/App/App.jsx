@@ -13,13 +13,13 @@ import Logos from "../Logos/Logos";
 // import Testimonial from "../Testimonial/Testimonial";
 import Features from "../Features/Features";
 import Video from "../Video/Video";
-// import Pricing from "../Pricing/Pricing";
 import FAQ from "../FAQ/FAQ";
 // import CTA from "../CTA/CTA";
 import Footer from "../Footer/Footer";
 import Accordion from "../Accordion/Accordion";
 import Navigation from "../Navigation/Navigation";
 import Team from "../Team/Team";
+// import Pricing from "../Pricing/Pricing";
 
 const App = () => {
   return (
@@ -47,7 +47,8 @@ const App = () => {
       </Testimonial> */}
 
       {/* Place your Tutorial video here */}
-        <Video />
+        {/* <Video /> */}
+        {/* <Pricing /> */}
       <FAQ>
         <Accordion />
       </FAQ>

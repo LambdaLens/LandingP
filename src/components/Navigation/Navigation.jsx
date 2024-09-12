@@ -2,7 +2,7 @@
 import "./Navigation.css";
 // import logo from "../../assets/logo.svg";
 import arrow from "../../assets/arrow.svg";
-import logo from "../../assets/LLcircle.png"
+import logo from "../../assets/lambdaWhite.png"
 
 const Navigation = () => {
   const handleGitHubClick = () => {
@@ -17,9 +17,9 @@ const Navigation = () => {
       </div>
       <ul className="navigation__link-section">
         <a href="https://medium.com/@erinlee12000/introducing-lambda-lens-a-better-way-to-observe-and-optimize-aws-lambda-performance-2fad2c2184a1" className="text-reg navigation__link">
-          Medium
+          Blog
         </a>
-        <a href="https://github.com/oslabs-beta/Lambda-Lens" className="text-reg navigation__link">
+        <a href="https://www.linkedin.com/company/lambdalens/" className="text-reg navigation__link">
           About Our Team
         </a>
       </ul>

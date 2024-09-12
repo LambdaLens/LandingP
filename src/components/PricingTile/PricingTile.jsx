@@ -3,6 +3,7 @@ import "./PricingTile.css";
 import check from "../../assets/check.png";
 import arrowDark from "../../assets/arrow.svg";
 import arrowLight from "../../assets/colored-arrow.svg";
+import logo from "../../assets/lambdaWhite.png"
 
 const PricingTile = ({
   plan,
@@ -19,18 +20,20 @@ const PricingTile = ({
   return (
     <div className={`pricing-tile ${dark}`}>
       <div className="plan-section">
-        <img className="plan-section__icon" src={planIcon} alt={plan} />
+        <img className="plan-section__icon" src={logo} alt={plan} />
         <p className="text-small plan-section__plan">{plan}</p>
       </div>
       <div className="pricing-section">
         <h2 className={`h2 pricing-section__price ${dark}`}>
           {planPrice ? price : "Custom"}
         </h2>
-        <p className={`text-reg pricing-section__period ${dark}`}>
+
+        
+        {/* <p className={`text-reg pricing-section__period ${dark}`}>
           {planPrice ? planPeriod : ""}
-        </p>
+        </p> */}
       </div>
-      <div className="bullets-section">
+      {/* <div className="bullets-section">
         {bullets.map((bullet, i) => {
           return (
             <div className="pricing-bullet" key={i}>
@@ -41,8 +44,8 @@ const PricingTile = ({
             </div>
           );
         })}
-      </div>
-      <button className={`pricing-cta ${dark}`}>
+      </div> */}
+      {/* <button className={`pricing-cta ${dark}`}>
         <span className="text-med pricing-cta__text">{CallToAction}</span>
         <img
           className={`pricing-cta__icon ${dark}`}
@@ -52,9 +55,21 @@ const PricingTile = ({
       </button>
       <p className="text-tiny pricing-tile__no-card">
         {planPrice ? "No credit card required" : ""}
-      </p>
+      </p> */}
     </div>
   );
 };
 
 export default PricingTile;
+
+/*
+tracked performance metrics:
+average billed duration
+cold start performance metrics
+total cold starts
+total concurrent executions
+total number of throttles
+average execution duration
+percentile latency
+
+*/
