@@ -47,7 +47,7 @@ const App = () => {
       </Testimonial> */}
 
       {/* Place your Tutorial video here */}
-        {/* <Video /> */}
+        <Video />
         {/* <Pricing /> */}
       <FAQ>
         <Accordion />
