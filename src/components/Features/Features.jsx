@@ -8,7 +8,7 @@ const Features = () => {
       <div className="features__heading-container">
         <h2 className="h2 features__heading">
           Discover the Power of{" "}
-          <span className="h2 features__text-gradient">LamdaLens</span>
+          <span className="h2 features__text-gradient">Lambda Lens</span>
         </h2>
         <p className="text-reg features__subheading">
           See what we use for our Tech Stack

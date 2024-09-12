@@ -15,7 +15,7 @@
 }
 
 .accordion-item__question {
-  margin: 0px;
+  margin: 0;
   color: var(--primary-100);
 }
 
@@ -37,10 +37,11 @@
   border-radius: 16px;
   transition: max-height 0.4s ease-in-out, visibility 0.2s ease-in-out,
     opacity 0.2s ease-in-out, margin 0.4s ease-in-out;
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .accordion-item__answer.visible {
-  max-height: 200px;
+  max-height: 200px; /* Adjust based on your design needs */
   visibility: visible;
   margin-top: 20px;
   opacity: 1;
@@ -60,4 +61,49 @@
   max-width: calc(100% - 118px);
   margin-bottom: 30px;
   margin-left: 30px;
+  word-wrap: break-word; /* Ensure long words break and do not overflow */
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease; 
+}
+
+.accordion-item__bar.open .accordion-icon {
+  transform: rotate(90deg); 
+}
+
+.scrollable-wrapper {
+  border-radius: 16px; 
+  overflow: hidden; 
+  position: relative; 
+}
+
+.scrollable-container {
+  padding: 16px;
+  box-sizing: border-box; 
+  overflow-y: auto; 
+  height: 100%;
+  border-radius: 5px; 
+}
+
+.scrollable-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px; 
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.scrollable-container {
+  scrollbar-width: thin; 
+  scrollbar-color: #888 transparent; 
 }

@@ -1,4 +1,4 @@
-.features {
+/* .features {
   padding: 70px 0px;
   position: relative;
 }
@@ -96,4 +96,312 @@
   position: absolute;
   top: 45%;
   left: 32%;
+} */
+
+/* 2nd one */
+/* 
+.features {
+  padding: 70px 0;
+  position: relative;
+}
+
+.features__heading-container {
+  margin-bottom: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2.features__heading {
+  color: var(--primary-100);
+  margin-bottom: 14px;
+}
+
+.h2.features__text-gradient {
+  background: linear-gradient(135deg, #447A90, #80b4d4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1.8px;
+  font-weight: 800;
+}
+
+.features__subheading {
+  max-width: 680px;
+  color: var(--primary-100);
+  text-align: center;
+}
+
+.features__feature-container {
+  display: grid;
+  grid-template-areas:
+    "tl tl tr tr"
+    "bl bl br br";
+  grid-template-columns: repeat(4, 1fr); 
+  place-content: center;
+  gap: 20px 24px;
+}
+
+.feature {
+  padding: 32px;
+  border: 1px solid #447A90;
+  border-radius: 12px;
+  box-sizing: border-box; 
+}
+
+.feature__icon {
+  height: 32px;
+  width: 32px;
+  margin-bottom: 24px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 1px;
+  border: 1px solid #447A90;
+}
+
+.text-large.feature__heading {
+  color: var(--primary-100);
+  margin-bottom: 16px;
+}
+
+.feature__description {
+  color: var(--accent);
+}
+
+
+.features__overlay-gradient {
+  background: center no-repeat url("../../assets/features/radial-gradient-features.png");
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 45%;
+  left: 32%;
+}
+
+
+@media (max-width: 1200px) {
+  .features__feature-container {
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-areas:
+      "tl tl tr"
+      "bl bl br";
+  }
+
+  .feature {
+    padding: 24px; 
+  }
+}
+
+@media (max-width: 900px) {
+  .features__feature-container {
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-areas:
+      "tl tr"
+      "bl br";
+  }
+
+  .feature {
+    padding: 20px; 
+}
+}
+
+@media (max-width: 600px) {
+  .features__feature-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "tl"
+      "tr"
+      "bl"
+      "br";
+  }
+
+  .features__overlay-gradient {
+    width: 250px; 
+    height: 250px; 
+    top: 40%;
+    left: 20%;
+  }
+
+  .feature {
+    padding: 16px; 
+  }
+} */
+
+.features {
+  padding: 70px 0;
+  position: relative;
+}
+
+.features__heading-container {
+  margin-bottom: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2.features__heading {
+  color: var(--primary-100);
+  margin-bottom: 14px;
+}
+
+.h2.features__text-gradient {
+  background: linear-gradient(135deg, #447A90, #80b4d4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1.8px;
+  font-weight: 800;
+}
+
+.features__subheading {
+  max-width: 680px;
+  color: var(--primary-100);
+  text-align: center;
+}
+
+.features__feature-container {
+  display: grid;
+  grid-template-areas:
+    "tl tl tr tr"
+    "bl bl br br";
+  grid-template-columns: repeat(4, 1fr);
+  place-content: center;
+  gap: 20px 24px;
+}
+
+/* Feature Box Styles */
+.feature {
+  padding: 32px;
+  border: 1px solid #447A90; /* Border color for the box */
+  border-radius: 12px;
+  box-sizing: border-box;
+  position: relative; /* Ensure pseudo-elements are positioned relative to this box */
+  overflow: hidden; /* Ensure content does not overflow the box */
+  background: transparent; /* Make the box background transparent */
+}
+
+/* Ball effect around the border */
+.feature::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -10px; /* Position the ball just above the box */
+  left: -10px; /* Position the ball just left of the box */
+  background: rgba(255, 255, 255, 0.6); /* Ball color */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 0; /* Ensure the ball is behind the content */
+  animation: ball3 5s linear infinite;
+}
+
+/* Animation keyframes for the ball effect */
+
+@keyframes ball3 {
+  0% { transform: translate(0px, 20px); } /* Start position at the top-left corner */
+  25% { transform: translate(calc(100% - 20px), 20px); } /* Move to the top-right corner */
+  50% { transform: translate(calc(100% - 20px), calc(100% + 20px)); } /* Move to the bottom-right corner */
+  75% { transform: translate(20px, calc(100% + 20px)); } /* Move to the bottom-left corner */
+  100% { transform: translate(0px, calc(100% + 20px)); } /* Move back to the starting position */
+}
+/* @keyframes ball3 {
+  0% { transform: translate(-10px, -10px); }
+  25% { transform: translate(calc(100% - 10px), -10px); }
+  50% { transform: translate(calc(100% - 10px), calc(100% - 10px)); }
+  75% { transform: translate(-10px, calc(100% - 10px)); }
+  100% { transform: translate(-10px, -10px); }
+} */
+/* 
+@keyframes ball3 {
+  0% { transform: translate(0px, 20px); }
+  25% { transform: translate(calc(100% - 20px), 20px); }
+  50% { transform: translate(calc(100% - 20px), calc(100% - 20px)); }
+  75% { transform: translate(20px, calc(100% - 20px)); }
+  90% { transform: translate(20px, 20px); }
+  100% { transform: translate(0px, 20px); }
+} */
+
+/* Ensure text and icons are visible above the ball effect */
+.feature * {
+  position: relative; /* Ensure child elements are positioned above the pseudo-element */
+  z-index: 1; /* Ensure text and icons stay above the ball effect */
+}
+
+.feature__icon {
+  height: 32px;
+  width: 32px;
+  margin-bottom: 24px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 1px;
+  border: 1px solid #447A90; /* Logo box border color */
+  background: transparent /* Logo box background color */
+}
+
+.text-large.feature__heading {
+  color: var(--primary-100); /* Ensure text is visible against transparent background */
+  margin-bottom: 16px;
+}
+
+.feature__description {
+  color: var(--accent); /* Ensure description text is visible */
+}
+
+/* Overlay Gradient */
+.features__overlay-gradient {
+  background: center no-repeat url("../../assets/features/radial-gradient-features.png");
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 45%;
+  left: 32%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .features__feature-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "tl tl tr"
+      "bl bl br";
+  }
+
+  .feature {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .features__feature-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "tl tr"
+      "bl br";
+  }
+
+  .feature {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .features__feature-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "tl"
+      "tr"
+      "bl"
+      "br";
+  }
+
+  .features__overlay-gradient {
+    width: 250px;
+    height: 250px;
+    top: 40%;
+    left: 20%;
+  }
+
+  .feature {
+    padding: 16px;
+  }
 }

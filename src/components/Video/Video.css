@@ -1,11 +1,11 @@
-.video {
+ /* .video {
   padding: 64px 0px;
   display: flex;
   justify-content: center;
   position: relative;
 }
 
-.video__container {
+ .video__container {
   overflow: none;
   max-height: 652px;
   position: relative;
@@ -60,4 +60,26 @@
   right: 10px;
   z-index: -1;
   transform: rotate(5deg);
+}  */ 
+
+.video {
+  padding: 64px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: transparent; /* Make the background of the section transparent */
+}
+
+.video__container {
+  position: relative;
+  width: 70%; /* Full width of the parent container */
+  height: 60%; /* Full viewport height or set a fixed height */
+  overflow: hidden; /* Hide overflow to ensure no white space */
+}
+
+.video__gif {
+  width: 100%; /* Make GIF fit the container's width */
+  height: 100%; /* Make GIF fit the container's height */
+  object-fit: cover; /* Ensure the GIF covers the container */
+  background: transparent; /* Make sure the GIF background is transparent */
 }

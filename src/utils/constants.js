@@ -5,7 +5,7 @@ const logos = [
   new URL("../assets/features/Aws.svg", import.meta.url).href,
   new URL("../assets/features/Auth.svg", import.meta.url).href,
   new URL("../assets/features/JS.svg", import.meta.url).href,
-  new URL("../assets/features/Docker.svg", import.meta.url).href,
+  // new URL("../assets/features/Docker.svg", import.meta.url).href,
   new URL("../assets/features/GitHub.svg", import.meta.url).href,
   new URL("../assets/features/Mongo.svg", import.meta.url).href,
 ];
@@ -15,35 +15,34 @@ const features = [
   {
     gridArea: "tl",
     image: new URL("../assets/features/TS.svg", import.meta.url).href,
-    heading: "TypeScript",
-    description: `High performance language to enhance your applications via Typescript`,
+    heading: "Average Bill Duration",
+    description: `Measures the average time billed for each serverless function execution, including initialization and overhead.`,
   },
   {
     gridArea: "tr",
     image: new URL("../assets/features/Aws.svg", import.meta.url).href,
-    heading: "AWS Serverless Lambda",
-    description: `Create custom lambda functions that 
-                  you can perform and collect metrics`,
+    heading: "Cold Start Performance Metrics",
+    description: `Tracks the time taken for functions to initialize when they have been idle or are invoked for the first time.`,
   },
   {
     gridArea: "bl",
     image: new URL("../assets/features/Auth.svg", import.meta.url).href,
-    heading: "Secure your application using IAM",
-    description: `Rest easy knowing that your notes are securely stored in the cloud. 
-                  `,
+    heading: "Total Cold Starts",
+    description: `The total number of times a function was initialized from scratch, indicating how often it experiences cold starts.
+            `,
   },
   {
     gridArea: "blm",
     image: new URL("../assets/features/Analytic.svg", import.meta.url)
       .href,
     heading: "Real-Time Performance Metric",
-    description: `One place to visit and see all visualiation metrics`,
+    description: `Gain insights through advanced data visualization and monitor performance metrics in real time.`,
   },
   {
     gridArea: "brm",
     image: new URL("../assets/features/AI.svg", import.meta.url).href,
     heading: "AI-Powered BedRock",
-    description: `Integrated AI for user to get more insights on your perfomance metrics`,
+    description: `Leverage AI-driven Bedrock integration to gain deeper insights into your performance metrics.`,
   },
 ];
 
@@ -117,15 +116,20 @@ const faqItems = [
   },
   {
     id: 3,
-    question: "Additional FAQ",
-    answerHeading: "Additional FAQ",
-    answer: `Additional FAQ`,
+    question: "What should I do if I encounter an issue with Lambda Lens?",
+    answerHeading: "What should I do if I encounter an issue with Lambda Lens?",
+    answer: `If you encounter issues, check our troubleshooting documentation.
+              You can also reach out to us on GitHub or Linkedin. Please provide details
+              informations and logs to help us resolve your issues quickly!`,
   },
   {
     id: 4,
-    question: "Additional FAQ",
-    answerHeading: "Additional FAQ",
-    answer: `Gdditional FAQ.`,
+    question: "How can I contribute to Lambda Lens?",
+    answerHeading: "How can I contribute to Lambda Lens?",
+    answer: `Contributions are welcome! To Contribute
+            1. Create a fork of Lambda lens repo on Github
+            2. Develop your changes in a separate branch
+            3. Push your changes to your fork and submit pull request to the main repo`,
   },
   // {
   //   id: 5,
