@@ -1,14 +1,34 @@
- /* .video {
-  padding: 64px 0px;
+.video {
+  padding: 64px 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column; 
+  align-items: center; 
   position: relative;
 }
 
- .video__container {
-  overflow: none;
-  max-height: 652px;
+.video__title {
+  font-size: 3rem; 
+  font-weight: bold;
+  color: #fff; 
+  margin-bottom: 70px; 
+  text-align: center; 
+  position: relative; 
+  z-index: 2; 
+}
+
+.video__container {
   position: relative;
+  max-height: 652px; 
+  overflow: hidden; 
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+}
+
+.video__gif {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
 }
 
 .video__overlay {
@@ -60,26 +80,86 @@
   right: 10px;
   z-index: -1;
   transform: rotate(5deg);
-}  */ 
+}
 
+/* before
 .video {
   padding: 64px 0;
   display: flex;
   justify-content: center;
   position: relative;
-  background: transparent; /* Make the background of the section transparent */
+  background: transparent; 
 }
 
 .video__container {
   position: relative;
-  width: 70%; /* Full width of the parent container */
-  height: 60%; /* Full viewport height or set a fixed height */
-  overflow: hidden; /* Hide overflow to ensure no white space */
+  width: 70%;
+  height: 60%; 
+  overflow: hidden; 
 }
 
 .video__gif {
-  width: 100%; /* Make GIF fit the container's width */
-  height: 100%; /* Make GIF fit the container's height */
-  object-fit: cover; /* Ensure the GIF covers the container */
-  background: transparent; /* Make sure the GIF background is transparent */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  background: transparent; 
+} */
+/* 
+.video {
+  padding: 64px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: transparent; 
 }
+
+.video__container {
+  position: relative;
+  width: 70%; 
+  max-width: 100%;
+  height: 0; 
+  padding-bottom: 56.25%;
+  overflow: hidden; 
+}
+
+.video__container video,
+.video__container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5); 
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+
+}
+
+.video-gradient {
+  position: absolute;
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+.video__tl-gradient {
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 20%;
+}
+
+.video__br-gradient {
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  height: 20%;
+} */
